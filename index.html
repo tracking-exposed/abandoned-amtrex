@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>American Muslims Tracking Exposed</title>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Sanchez|Work+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="/amtrex.css">
+
+        <!--   Raw   -->
+        <!-- d3 -->
+        <script type="text/javascript" src="raw/bower_components/d3/d3.min.js"></script>
+        <script type="text/javascript" src="raw/bower_components/d3-plugins/sankey/sankey.js"></script>
+        <script type="text/javascript" src="raw/bower_components/d3-plugins/hexbin/hexbin.js"></script>
+        <script type="text/javascript" src="raw/bower_components/d3-plugins-density/horizon.js"></script>
+        <script type="text/javascript" src="raw/bower_components/d3-plugins/box/box.js"></script>
+        <!-- codemirror -->
+        <script type="text/javascript" src="raw/bower_components/codemirror/lib/codemirror.js"></script>
+        <script type="text/javascript" src="raw/bower_components/codemirror/addon/display/placeholder.js"></script>
+        <!-- canvastoblob -->
+        <script type="text/javascript" src="raw/bower_components/canvas-toBlob.js/canvas-toBlob.js"></script>
+        <!-- filesaver -->
+        <script type="text/javascript" src="raw/bower_components/FileSaver/FileSaver.js"></script>
+        <!-- zeroclipboard -->
+        <script type="text/javascript" src="raw/bower_components/zeroclipboard/ZeroClipboard.min.js"></script>
+        <!-- raw -->
+        <script type="text/javascript" src="raw/lib/raw.js"></script>
+
+        <!-- angular, please note: this is cargo cult programming, if someone can optimize here, big up -->
+        <script type="text/javascript" src="raw/bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="raw/bower_components/angular-route/angular-route.min.js"></script>
+        <script type="text/javascript" src="raw/bower_components/angular-animate/angular-animate.min.js"></script>
+        <script type="text/javascript" src="raw/bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+        <script type="text/javascript" src="raw/bower_components/angular-strap/dist/angular-strap.min.js"></script>
+        <script type="text/javascript" src="raw/bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
+        <script type="text/javascript" src="raw/bower_components/angular-ui/build/angular-ui.js"></script>
+        <script type="text/javascript" src="raw/bower_components/is_js/is.min.js"></script>
+        <script type="text/javascript" src="raw/bower_components/js-xlsx/dist/xlsx.full.min.js"></script>
+
+        <script src="raw/js/app.js"></script>
+        <script src="raw/js/services.js"></script>
+        <script src="raw/js/controllers.js"></script>
+        <script src="raw/js/filters.js"></script>
+        <script src="raw/js/directives.js"></script>
+
+        <!-- The only script, the emulate raw UX -->
+        <script src="/amtrex.js"></script>
+    </head>
+
+    <body onload="amtrexRender(1, '#table');">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#thenavbar" aria-expanded="false"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="thenavbar">
+                <ul class="nav navbar-nav">
+                    <li> <a href="#where">See where</a> </li>
+                    <li> <a href="#requests">Reasonable requests</a> </li>
+                    <li> <a href="#support">Do something</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container firstcontent">
+        <h1>Exposing Online Tracking of American Muslims</h1>
+        <h2>Who could have a registry?</h2>
+
+        <p class="textL">We have analyzed popular Islamic websites and the trackers found on their pages to discover which companies (trackers) have the ability to form a registry of likely Muslims.</p>
+
+        <p class="textR">Websites use trackers in their pages for different reasons: advertising, analytics, social engagement. But these trackers also have same ability to track the website's visitors.</p>
+
+        <p class="textL">If a user <b>frequently accesses</b> web pages intended for an Islamic audience, an algorithm could assume the user is an active Islamic practitioner.</p>
+        <p class="textR">The frequency of access and the intensity of interest of these visits can be measured and tracked by the visited websites they are visiting. However, there are also many third party trackers doing exactly that. These third parties can now know who is a practitioner and not. This is their core business model.</p>
+
+        <p class="textL">These websites are ultimately responsible of the trackers served to their readers. Often they are not aware of which trackers they are including.</p>
+    </div>
+
+        <div class="container">
+            <h2>Look the companies that could have this data…</h2>
+            <ul class="nav nav-tabs nav-justified">
+                <li role="presentation"> <a onclick="amtrexRender(1, '#table');">first 10</a> </li>
+                <li role="presentation"> <a onclick="amtrexRender(2, '#table');">..20</a> </li>
+                <li role="presentation"> <a onclick="amtrexRender(3, '#table');">..30</a> </li>
+                <li role="presentation"> <a onclick="amtrexRender(4, '#table');">..40</a> </li>
+                <li role="presentation"> <a onclick="amtrexRender(5, '#table');">..50</a> </li>
+                <li role="presentation"> <a onclick="amtrexRender(6, '#table');">..60</a> </li>
+                <li role="presentation"> <a onclick="amtrexRender(7, '#table');">..70</a> </li>
+                <li role="presentation"> <a onclick="amtrexRender(8, '#table');">..80</a> </li>
+                <li role="presentation"> <a onclick="amtrexRender(9, '#table');">..end</a> </li>
+            </ul>
+            <div id="table"></div>
+            <i>P.S. do not mistake this with wiretapping. That can be solved if website uses HTTPS, but this is a different kind of user survelliance.</i>
+        </div>
+
+        <div class="container">
+            <h2 class="titles" id="requests">What we request from the tracking companies</h2>
+            <ul>
+                <li>How easy is it to link the collected profiles to a phone number (and to a physical ID)? Can you minimize your data collected into groups of users instead of keeping personal behavior's history? We will assume you are keeping individual personal profile unless otherwise stated.</li>
+                <li>The third party inclusions present in such website create <a href="https://www.teachprivacy.com/sensitive-data-different-definitions-privacy-law/" target="_blank">sensitive data</a>;  Please treat all users navigating in those sites <b>as if</b> they have <a href="https://en.wikipedia.org/wiki/Do_Not_Track" target="_blank">Do Not Track</a> enabled.</li>
+                <li>Can you disclose the amount and the kind of metadata you collect? considering these data describe societal behavior, knowing who has more metadata is in the public interest.</li>
+                <li>If your company, ever got any request of user selection based on their religious beliefs: send a tip off to the investigative journalists of <a href="https://www.propublica.org/article/how-to-leak-to-propublica" target="_blank">ProPublica</a>, they wrote this <a href="https://www.propublica.org/article/facebook-lets-advertisers-exclude-users-by-race" target="_blank">story on racial profiling perfomed by Facebook</a>: but how many other companies can do the same?
+                <li>Have you ever been compromised? do you have any mechanism that might prevent unfaithful employee or remote attacker to steal profile based data from your server? We have to assume you are not protected if not otherwise stated.</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <h2 class="titles" id="support">Is it important do something!</h2>
+            <ul>
+                <li>The list of website analyzed above is supposed to reflect the content seen by an American Muslim. This task is a collaborative effort, propose your changes to the <a href="https://github.com/tracking-exposed/AMTREX/blob/master/fixtures/last-list.csv">list on github</a>.</p>
+                <li><b>Do you know someone in these companies</b>? Forward them the requests above, they will rather listen to a friend like you than a website like us.</li>
+                <li><b>Protect yourself</b>: check it out how reduce your <a href="https://myshadow.org/prevent-online-tracking">Digital Shadow</a>, or look at <a href="http://www.internetsociety.org/your-digital-footprint/what-is">these videos of Internet Society</a> if you want know more.</li>
+                <li><b>Do you know the owner of one of these websites</b>? They have to be more responsible about the inclusion of third party trackers! most of the time they don't really need that, but the effect is a massive targeted profiling</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <h2 class="titles" id="about">About Us</h2>
+        </div>
+
+        <div class="container">
+            <p>This analysis is done with the same approach used by <a href="https://webtransparency.cs.princeton.edu/webcensus/" target="_blank">Princeton University WebCensus</a> done 1 year ago. The technology used is the advancement of <a href="https://trackography.org">Trackography</a>.</p>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Affiliation</th>
+                        <th>for</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://twitter.com/_vecna" target="_blank">Claudio Agosti</a></td>
+                        <td><a href="https://facebook.tracking.exposed" target="_blank">facebook.tracking.exposed</a></td>
+                        <td>analysis, management</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tullia Mancuso</td>
+                        <td>?</td>
+                        <td>research, revision</td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="https://twitter.com/maasalan" target="_blank">Mahsa Alimardani</a></td>
+                        <td>Internet researcher</td>
+                        <td>research, revision</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

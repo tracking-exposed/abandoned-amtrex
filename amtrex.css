@@ -1,0 +1,42 @@
+.firstcontent {
+    padding-top: 70px;
+}
+
+body {
+    background-color: #d9f9e1;
+    font-size: 18px;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Sanchez', serif;
+    margin-bottom:1em;
+    font-weight:bold;
+}
+
+.textL {
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    padding-left: 3em;
+    background-color: #b3fcc5;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+
+.textR {
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    padding-left: 3em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border: #b3fcc5;
+}
+
+.textL, .textR{
+  margin-left:-3em;
+}
+
+#table {
+    /* background-image: url('fixtures/background.png'); */
+    background-color: #f1ffea;
+}
