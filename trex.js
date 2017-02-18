@@ -17,7 +17,7 @@ function amtrexRender(chunk, containerId) {
     var nodeWidth = 5;
     var nodePadding = 12;
 
-    d3.json("generated/amtrex-" + chunk + ".json", function (data) {
+    d3.json("/generated-" + chunk + ".json", function (data) {
 
         var formatNumber = d3.format(",.0f"),
             format = function(d) { return formatNumber(d); };
