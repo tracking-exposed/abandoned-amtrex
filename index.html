@@ -54,7 +54,7 @@
         <script src="/amtrex.js"></script>
     </head>
 
-    <body>
+    <body onload="amtrexRender('mosques', '#table');">
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -94,10 +94,7 @@
                 <li role="presentation"> <a onclick="amtrexRender('mosques', '#table');"><img src="/mosque.png" /></a> </li>
                 <li role="presentation"> <a onclick="amtrexRender('culture', '#table');"><img src="/culture.png" /></a> </li>
             </ul>
-            <div id="table">
-                <p class="center"><b>Click on the icons above, to see detail analysis</b></p>
-                <p>The list of website analyzed above is supposed to reflect the content seen by an American Muslim. This task is a collaborative effort, propose your changes to the site list: <a href="https://github.com/tracking-exposed/amtrex/blob/master/culture-list.csv">Culture and generic Islamic websites</a>, <a href="https://github.com/tracking-exposed/amtrex/blob/master/halal-list.csv">Halal food shop</a>, <a href="https://github.com/tracking-exposed/amtrex/blob/master/mosques-list.csv">Mosques</a> and <a href="https://github.com/tracking-exposed/amtrex/blob/master/travel-list.csv">Travel agency for Hajj and 'Umra</a></p>
-            </div>
+            <div id="table"></div>
             <i>P.S. do not mistake this with wiretapping. That can be solved if website uses HTTPS, but this is a different kind of user survelliance.</i>
         </div>
 
