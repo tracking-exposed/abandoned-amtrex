@@ -1,0 +1,280 @@
+{
+  "nodes": [
+    {
+      "href": "http://cgie.org.ir",
+      "name": "cgie.org.ir",
+      "group": "site",
+      "node": 0
+    },
+    {
+      "name": "Google",
+      "group": "company",
+      "node": 1
+    },
+    {
+      "name": "US",
+      "group": "country",
+      "node": 2
+    },
+    {
+      "href": "http://nikah.com",
+      "name": "nikah.com",
+      "group": "site",
+      "node": 3
+    },
+    {
+      "href": "http://names4muslims.com",
+      "name": "names4muslims.com",
+      "group": "site",
+      "node": 4
+    },
+    {
+      "name": "Maxcdn",
+      "group": "company",
+      "node": 5
+    },
+    {
+      "name": "Cloudflare",
+      "group": "company",
+      "node": 6
+    },
+    {
+      "name": "AddThis",
+      "group": "company",
+      "node": 7
+    },
+    {
+      "name": "Facebook",
+      "group": "company",
+      "node": 8
+    },
+    {
+      "name": "BlueKai",
+      "group": "company",
+      "node": 9
+    },
+    {
+      "href": "http://ismaili.net",
+      "name": "ismaili.net",
+      "group": "site",
+      "node": 10
+    },
+    {
+      "name": "Twitter",
+      "group": "company",
+      "node": 11
+    },
+    {
+      "href": "http://finalcall.com",
+      "name": "finalcall.com",
+      "group": "site",
+      "node": 12
+    },
+    {
+      "href": "http://whyislam.org",
+      "name": "whyislam.org",
+      "group": "site",
+      "node": 13
+    },
+    {
+      "name": "Go Daddy",
+      "group": "company",
+      "node": 14
+    },
+    {
+      "name": "Amazon AWS",
+      "group": "company",
+      "node": 15
+    },
+    {
+      "href": "http://zabihah.com",
+      "name": "zabihah.com",
+      "group": "site",
+      "node": 16
+    },
+    {
+      "href": "http://islamicity.com",
+      "name": "islamicity.com",
+      "group": "site",
+      "node": 17
+    },
+    {
+      "name": "Quantcast",
+      "group": "company",
+      "node": 18
+    },
+    {
+      "href": "http://darululoom-deoband.com",
+      "name": "darululoom-deoband.com",
+      "group": "site",
+      "node": 19
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "value": 1
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "value": 1
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "value": 1
+    },
+    {
+      "source": 4,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 4,
+      "target": 8,
+      "value": 1
+    },
+    {
+      "source": 4,
+      "target": 9,
+      "value": 1
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "value": 1
+    },
+    {
+      "source": 10,
+      "target": 8,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 6,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 8,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "value": 1
+    },
+    {
+      "source": 16,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 17,
+      "target": 6,
+      "value": 1
+    },
+    {
+      "source": 17,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "value": 1
+    },
+    {
+      "source": 19,
+      "target": 7,
+      "value": 1
+    },
+    {
+      "source": 19,
+      "target": 6,
+      "value": 1
+    },
+    {
+      "source": 19,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "value": 8
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "value": 4
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "value": 2
+    },
+    {
+      "source": 8,
+      "target": 2,
+      "value": 3
+    },
+    {
+      "source": 9,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 11,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 18,
+      "target": 2,
+      "value": 1
+    }
+  ]
+}

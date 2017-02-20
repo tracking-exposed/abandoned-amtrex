@@ -50,8 +50,8 @@
         <script src="raw/js/filters.js"></script>
         <script src="raw/js/directives.js"></script>
 
-        <!-- The only script, the emulate raw UX -->
-        <script src="/trex.js"></script>
+        <!-- This is amtrex and not trex because has been modified on pourpose -->
+        <script src="/amtrex.js"></script>
     </head>
 
     <body onload="amtrexRender(1, '#table');">
@@ -75,12 +75,13 @@
         <h1>Exposing Online Tracking of American Muslims</h1>
         <h2>Who could have a registry?</h2>
 
-        <p class="textL">We have analyzed popular Islamic websites and the trackers found on their pages to discover which companies (trackers) have the ability to form a registry of likely Muslims.</p>
-
-        <p class="textR">Websites use trackers in their pages for different reasons: advertising, analytics, social engagement. But these trackers also have same ability to track the website's visitors.</p>
-
         <p class="textL">If a user <b>frequently accesses</b> web pages intended for an Islamic audience, an algorithm could assume the user is an active Islamic practitioner.</p>
-        <p class="textR">The frequency of access and the intensity of interest of these visits can be measured and tracked by the visited websites they are visiting. However, there are also many third party trackers doing exactly that. These third parties can now know who is a practitioner and not. This is their core business model.</p>
+
+        <p class="textR">Who can do such monitoring? the website itself, but when you are connecting to a single website, truly, your device is connecting to many websites. They take name of <b>web trackers</b> and they can monitor your navigation across many websites.</p>
+       
+        <p class="textL">When this happen, the assumption that you are muslim, became stronger. That is happening, the advertising do exactly that.</p>
+
+        <p class="textR">Websites use trackers in their pages for different, and justified, reasons: advertising, analytics, social engagement. Just, considering the muslimban, a renewed sensibility is necessary by websites and by trackers. This campaign constains some suggestions, below, that only a crowd can ask.<p>
 
         <p class="textL">These websites are ultimately responsible of the trackers served to their readers. Often they are not aware of which trackers they are including.</p>
     </div>
@@ -88,15 +89,10 @@
         <div class="container">
             <h2>Look the companies that could have this data…</h2>
             <ul class="nav nav-tabs nav-justified">
-                <li role="presentation"> <a onclick="amtrexRender(1, '#table');">first 10</a> </li>
-                <li role="presentation"> <a onclick="amtrexRender(2, '#table');">..20</a> </li>
-                <li role="presentation"> <a onclick="amtrexRender(3, '#table');">..30</a> </li>
-                <li role="presentation"> <a onclick="amtrexRender(4, '#table');">..40</a> </li>
-                <li role="presentation"> <a onclick="amtrexRender(5, '#table');">..50</a> </li>
-                <li role="presentation"> <a onclick="amtrexRender(6, '#table');">..60</a> </li>
-                <li role="presentation"> <a onclick="amtrexRender(7, '#table');">..70</a> </li>
-                <li role="presentation"> <a onclick="amtrexRender(8, '#table');">..80</a> </li>
-                <li role="presentation"> <a onclick="amtrexRender(9, '#table');">..end</a> </li>
+                <li role="presentation"> <a onclick="amtrexRender('halal', '#table');"><img src="/halal.png" /></a> </li>
+                <li role="presentation"> <a onclick="amtrexRender('travel', '#table');"><img src="/hajj.png" /></a> </li>
+                <li role="presentation"> <a onclick="amtrexRender('mosques', '#table');"><img src="/mosque.png" /></a> </li>
+                <li role="presentation"> <a onclick="amtrexRender('culture', '#table');"><img src="/culture.png" /></a> </li>
             </ul>
             <div id="table"></div>
             <i>P.S. do not mistake this with wiretapping. That can be solved if website uses HTTPS, but this is a different kind of user survelliance.</i>
@@ -104,6 +100,7 @@
 
         <div class="container">
             <h2 class="titles" id="requests">What we request from the tracking companies</h2>
+            <p class="textL">The companies have only a partial fault, they are in a Nation in which via gag order they can be forced to cooperate, these are not polished as <a href="https://www.eff.org/deeplinks/2016/11/tech-companies-fix-these-technical-issues-its-too-late">EFF made when DJT was still president Elected</a>.</p>
             <ul>
                 <li>How easy is it to link the collected profiles to a phone number (and to a physical ID)? Can you minimize your data collected into groups of users instead of keeping personal behavior's history? We will assume you are keeping individual personal profile unless otherwise stated.</li>
                 <li>The third party inclusions present in such website create <a href="https://www.teachprivacy.com/sensitive-data-different-definitions-privacy-law/" target="_blank">sensitive data</a>;  Please treat all users navigating in those sites <b>as if</b> they have <a href="https://en.wikipedia.org/wiki/Do_Not_Track" target="_blank">Do Not Track</a> enabled.</li>

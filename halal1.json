@@ -1,0 +1,254 @@
+{
+  "nodes": [
+    {
+      "href": "http://www.ankaradc.net/",
+      "name": "www.ankaradc.net/",
+      "group": "site",
+      "node": 0
+    },
+    {
+      "name": "Google",
+      "group": "company",
+      "node": 1
+    },
+    {
+      "name": "US",
+      "group": "country",
+      "node": 2
+    },
+    {
+      "href": "http://www.lebanesetaverna.com/",
+      "name": "www.lebanesetaverna.com/",
+      "group": "site",
+      "node": 3
+    },
+    {
+      "name": "Maxcdn",
+      "group": "company",
+      "node": 4
+    },
+    {
+      "name": "Facebook",
+      "group": "company",
+      "node": 5
+    },
+    {
+      "name": "Cloudflare",
+      "group": "company",
+      "node": 6
+    },
+    {
+      "name": "Adobe",
+      "group": "company",
+      "node": 7
+    },
+    {
+      "href": "http://www.mamouns.com/",
+      "name": "www.mamouns.com/",
+      "group": "site",
+      "node": 8
+    },
+    {
+      "name": "Amazon AWS",
+      "group": "company",
+      "node": 9
+    },
+    {
+      "href": "http://www.taginedining.com/",
+      "name": "www.taginedining.com/",
+      "group": "site",
+      "node": 10
+    },
+    {
+      "name": "imgIX",
+      "group": "company",
+      "node": 11
+    },
+    {
+      "name": "00",
+      "group": "country",
+      "node": 12
+    },
+    {
+      "name": "New Relic",
+      "group": "company",
+      "node": 13
+    },
+    {
+      "href": "http://shawarmaniac.com/",
+      "name": "shawarmaniac.com/",
+      "group": "site",
+      "node": 14
+    },
+    {
+      "name": "Twitter",
+      "group": "company",
+      "node": 15
+    },
+    {
+      "href": "http://seattlegoldenolive.com/",
+      "name": "seattlegoldenolive.com/",
+      "group": "site",
+      "node": 16
+    },
+    {
+      "href": "http://fayzarestaurant.com/",
+      "name": "fayzarestaurant.com/",
+      "group": "site",
+      "node": 17
+    },
+    {
+      "href": "http://www.meccagrilldenver.com/",
+      "name": "www.meccagrilldenver.com/",
+      "group": "site",
+      "node": 18
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 7,
+      "value": 1
+    },
+    {
+      "source": 8,
+      "target": 7,
+      "value": 1
+    },
+    {
+      "source": 8,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "value": 1
+    },
+    {
+      "source": 10,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "value": 1
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 5,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "value": 1
+    },
+    {
+      "source": 16,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 16,
+      "target": 5,
+      "value": 1
+    },
+    {
+      "source": 17,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 18,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 18,
+      "target": 5,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "value": 8
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "value": 4
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "value": 2
+    },
+    {
+      "source": 9,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "value": 1
+    },
+    {
+      "source": 13,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 2,
+      "value": 1
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+{
+  "nodes": [
+    {
+      "href": "http://islamtoday.net",
+      "name": "islamtoday.net",
+      "group": "site",
+      "node": 0
+    },
+    {
+      "name": "Cloudflare",
+      "group": "company",
+      "node": 1
+    },
+    {
+      "name": "US",
+      "group": "country",
+      "node": 2
+    },
+    {
+      "name": "Google",
+      "group": "company",
+      "node": 3
+    },
+    {
+      "name": "Maxcdn",
+      "group": "company",
+      "node": 4
+    },
+    {
+      "href": "http://ismailimail.wordpress.com",
+      "name": "ismailimail.wordpress.com",
+      "group": "site",
+      "node": 5
+    },
+    {
+      "name": "WordPress",
+      "group": "company",
+      "node": 6
+    },
+    {
+      "name": "Twitter",
+      "group": "company",
+      "node": 7
+    },
+    {
+      "name": "Automattic",
+      "group": "company",
+      "node": 8
+    },
+    {
+      "name": "Facebook",
+      "group": "company",
+      "node": 9
+    },
+    {
+      "name": "comScore",
+      "group": "company",
+      "node": 10
+    },
+    {
+      "href": "http://islam.ru",
+      "name": "islam.ru",
+      "group": "site",
+      "node": 11
+    },
+    {
+      "name": "Yandex",
+      "group": "company",
+      "node": 12
+    },
+    {
+      "name": "RU",
+      "group": "country",
+      "node": 13
+    },
+    {
+      "href": "http://al-islam.com",
+      "name": "al-islam.com",
+      "group": "site",
+      "node": 14
+    },
+    {
+      "href": "http://islamreligion.com",
+      "name": "islamreligion.com",
+      "group": "site",
+      "node": 15
+    },
+    {
+      "name": "AddThis",
+      "group": "company",
+      "node": 16
+    },
+    {
+      "name": "Amazon AWS",
+      "group": "company",
+      "node": 17
+    },
+    {
+      "name": "LivePerson",
+      "group": "company",
+      "node": 18
+    },
+    {
+      "href": "http://aku.edu",
+      "name": "aku.edu",
+      "group": "site",
+      "node": 19
+    },
+    {
+      "href": "http://alislam.org",
+      "name": "alislam.org",
+      "group": "site",
+      "node": 20
+    },
+    {
+      "href": "http://shiachat.com",
+      "name": "shiachat.com",
+      "group": "site",
+      "node": 21
+    },
+    {
+      "href": "http://islamonline.net",
+      "name": "islamonline.net",
+      "group": "site",
+      "node": 22
+    },
+    {
+      "href": "http://rafed.net",
+      "name": "rafed.net",
+      "group": "site",
+      "node": 23
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 3,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 9,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 10,
+      "value": 1
+    },
+    {
+      "source": 11,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 11,
+      "target": 3,
+      "value": 1
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 14,
+      "target": 3,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 3,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "value": 1
+    },
+    {
+      "source": 15,
+      "target": 9,
+      "value": 1
+    },
+    {
+      "source": 19,
+      "target": 3,
+      "value": 1
+    },
+    {
+      "source": 20,
+      "target": 3,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 8,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 3,
+      "value": 1
+    },
+    {
+      "source": 21,
+      "target": 6,
+      "value": 1
+    },
+    {
+      "source": 22,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 22,
+      "target": 3,
+      "value": 1
+    },
+    {
+      "source": 23,
+      "target": 3,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "value": 5
+    },
+    {
+      "source": 3,
+      "target": 2,
+      "value": 10
+    },
+    {
+      "source": 4,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 6,
+      "target": 2,
+      "value": 2
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 8,
+      "target": 2,
+      "value": 2
+    },
+    {
+      "source": 9,
+      "target": 2,
+      "value": 2
+    },
+    {
+      "source": 10,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "value": 1
+    },
+    {
+      "source": 16,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 17,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 18,
+      "target": 2,
+      "value": 1
+    }
+  ]
+}

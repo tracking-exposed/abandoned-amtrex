@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "href": "http://aaiil.org",
+      "name": "aaiil.org",
+      "group": "site",
+      "node": 0
+    },
+    {
+      "name": "AddThis",
+      "group": "company",
+      "node": 1
+    },
+    {
+      "name": "US",
+      "group": "country",
+      "node": 2
+    },
+    {
+      "name": "Cloudflare",
+      "group": "company",
+      "node": 3
+    },
+    {
+      "href": "http://submission.org",
+      "name": "submission.org",
+      "group": "site",
+      "node": 4
+    },
+    {
+      "name": "Google",
+      "group": "company",
+      "node": 5
+    },
+    {
+      "href": "http://isesco.org.ma",
+      "name": "isesco.org.ma",
+      "group": "site",
+      "node": 6
+    }
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1,
+      "value": 1
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "value": 1
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "value": 1
+    },
+    {
+      "source": 6,
+      "target": 5,
+      "value": 1
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 3,
+      "target": 2,
+      "value": 1
+    },
+    {
+      "source": 5,
+      "target": 2,
+      "value": 2
+    }
+  ]
+}

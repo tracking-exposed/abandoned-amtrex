@@ -1,0 +1,42 @@
+[
+  {
+    "href": "http://www.ankaradc.net/",
+    "description": "Washington DC Turkish restaurant",
+    "rank": 1
+  },
+  {
+    "href": "http://www.lebanesetaverna.com/",
+    "description": "Washington DC Lebanese restaurant",
+    "rank": 2
+  },
+  {
+    "href": "http://www.mamouns.com/",
+    "description": "Halal food in New York City, small chain",
+    "rank": 3
+  },
+  {
+    "href": "http://www.taginedining.com/",
+    "description": "Halal Tajin in New York, restaurant",
+    "rank": 4
+  },
+  {
+    "href": "http://shawarmaniac.com/",
+    "description": " \"Shawarma in Seattle",
+    "rank": 5
+  },
+  {
+    "href": "http://seattlegoldenolive.com/",
+    "description": " \"Lebanese restaurant in Seattle",
+    "rank": 6
+  },
+  {
+    "href": "http://fayzarestaurant.com/",
+    "description": " \"Mediterranean and Lebanese restaurant in Seattle",
+    "rank": 7
+  },
+  {
+    "href": "http://www.meccagrilldenver.com/",
+    "description": " \"Denver Lebanese Grill",
+    "rank": 8
+  }
+]

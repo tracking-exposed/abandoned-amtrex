@@ -17,7 +17,7 @@ function amtrexRender(chunk, containerId) {
     var nodeWidth = 5;
     var nodePadding = 12;
 
-    d3.json("/generated-" + chunk + ".json", function (data) {
+    d3.json("/" + chunk + "1.json", function (data) {
 
         var formatNumber = d3.format(",.0f"),
             format = function(d) { return formatNumber(d); };
@@ -45,6 +45,7 @@ function amtrexRender(chunk, containerId) {
             .layout(32);
 
         // Re-sorting nodes
+        
         nested = d3.nest()
             .key(function(d){ return d.group; })
             .map(data.nodes)
@@ -88,7 +89,6 @@ function amtrexRender(chunk, containerId) {
                     })
             })
         })
-
         var colors = d3.scale.category20();
 
         var link = g.append("g").selectAll(".link")
