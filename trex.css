@@ -7,14 +7,16 @@ body {
     font-size: 18px;
 }
 
-.center {
-    text-align: center;
-}
-
 h1,h2,h3,h4,h5{
     font-family: 'Sanchez', serif;
     margin-bottom:1em;
     font-weight:bold;
+}
+
+.idesc {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
 }
 
 .textL {
@@ -39,6 +41,11 @@ h1,h2,h3,h4,h5{
 .textL, .textR{
   margin-left:-3em;
 }
+
+.reduced {
+    text-size: 0.8em;
+}
+
 
 #table {
     /* background-image: url('fixtures/background.png'); */

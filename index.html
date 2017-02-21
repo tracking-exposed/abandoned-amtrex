@@ -50,6 +50,12 @@
         <script src="raw/js/filters.js"></script>
         <script src="raw/js/directives.js"></script>
 
+        <meta property="og:title" content="american.muslims.tracking.exposed">
+        <meta property="og:image" content="https">
+        <meta property="og:url" content="website">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="This project takes the cue from the recent Muslim ban. Since algorithms can express the behavior of internet users, it suggests that sensible data can be easily exploited just taking advantage of third party trackers already existing on the internet for lawful reasons. It targets website management, citizens who practice Islam, and tracking companies and aims to finalize a method to collaborate against such a danger, by assessing, as a first step, the presence of third-party tracking.">
+
         <!-- This is amtrex and not trex because has been modified on pourpose -->
         <script src="/amtrex.js"></script>
     </head>
@@ -75,27 +81,50 @@
         <h1>Exposing Online Tracking of American Muslims</h1>
         <h2>Who could have a registry?</h2>
 
-        <p class="textL">If a user <b>frequently accesses</b> web pages intended for an Islamic audience, an algorithm could assume the user is an active Islamic practitioner.</p>
+        <p class="textR">This project takes the cue from the recent Muslim ban. Since algorithms can express the behavior of internet users, it suggests that sensible data can be easily exploited just taking advantage of third party trackers already existing on the internet for lawful reasons. It targets website management, citizens who practice Islam, and tracking companies and aims to finalize a method to collaborate against such a danger, by assessing, as a first step, the presence of third-party tracking.</p>
 
-        <p class="textR">Who can do such monitoring? the website itself, but when you are connecting to a single website, truly, your device is connecting to many websites. They take name of <b>web trackers</b> and they can monitor your navigation across many websites.</p>
+        <p class="textL">If a user frequently accesses web pages intended for an Islamic audience, an algorithm could assume the user is an active Islamic practitioner. This normally is addressed as an advertigins effect, since the 2007 institutions address the <a href="https://epic.org/privacy/consumer/online_tracking_and_behavioral.html" target="_blank">phenomena</a>, and recently new progress has been made by <a href="https://www.theatlantic.com/technology/archive/2017/02/browsing-history-identity/515763/">Stanford and Princetor researcher</a>.</p>
 
-        <p class="textL">When this happen, the assumption that you are muslim, became stronger.</p>
+        <p class="textR"><b>Now is it clear the impact is not just on advertising business, but on the life of a category actively threatened by discriminatory policies.</b></p>
+        
+        <p class="textL">Who can do such monitoring? the website itself, but when you are connecting to a single website, truly, your device is connecting to many websites. They take name of <b>web trackers</b> and they can monitor your navigation across many websites.</p>
+
+        <p class="textR">When this happen, the assumption that you are muslim, became stronger.</p>
        
-        <p class="textR">Websites use trackers in their pages for different, and justified, reasons: advertising, analytics, social engagement. Just, considering the muslimban, a new sensibility is necessary by websites and by trackers. This campaign contains suggestions, below, that only your crowd can ask!<p>
+        <p class="textL">Websites use trackers in their pages for different, and justified, reasons: advertising, analytics, social engagement. Just, considering the muslimban, a new sensibility is necessary by websites and by trackers. This campaign contains suggestions, below, that only your crowd can ask!<p>
 
-        <p class="textL">These websites are ultimately responsible of the trackers served to their readers. Often they are not aware of which trackers they are including.</p>
+        <p class="textR">These websites are ultimately responsible of the trackers served to their readers. Often they are not aware of which trackers they are including.</p>
     </div>
 
         <div class="container">
             <h2>Look the companies that could have this data…</h2>
-            <ul class="nav nav-tabs nav-justified">
-                <li role="presentation"> <a onclick="amtrexRender('halal', '#table');"><img src="/halal.png" /></a> </li>
-                <li role="presentation"> <a onclick="amtrexRender('travel', '#table');"><img src="/hajj.png" /></a> </li>
-                <li role="presentation"> <a onclick="amtrexRender('mosques', '#table');"><img src="/mosque.png" /></a> </li>
-                <li role="presentation"> <a onclick="amtrexRender('culture', '#table');"><img src="/culture.png" /></a> </li>
+            <ul class="nav nav-tabs nav-justified reduced">
+                <li role="presentation" id="halal">
+                    <a onclick="amtrexRender('halal', '#table');">
+                        <img src="/halal.png" />
+                    </a>
+                    <p class="idesc">Halal food</p>
+                </li>
+                <li role="presentation" id="travel">
+                    <a onclick="amtrexRender('travel', '#table');">
+                        <img src="/hajj.png" />
+                    </a>
+                    <p class="idesc">Hajj 'Umra trips</p>
+                </li>
+                <li role="presentation" id="mosques">
+                    <a onclick="amtrexRender('mosques', '#table');">
+                        <img src="/mosque.png" />
+                    </a>
+                    <p class="idesc">Moques</p>
+                </li>
+                <li role="presentation" id="culture">
+                    <a onclick="amtrexRender('culture', '#table');">
+                        <img src="/culture.png" />
+                    </a>
+                    <p class="idesc">Culture</p>
+                </li>
             </ul>
             <div id="table"></div>
-            <i>P.S. do not mistake this with wiretapping. That can be solved if website uses HTTPS, but this is a different kind of user survelliance.</i>
         </div>
 
         <div class="container">
@@ -111,21 +140,24 @@
         </div>
 
         <div class="container">
-            <h2 class="titles" id="support">Is it important do something!</h2>
+            <h2 class="titles" id="support">Is it important spread the word!</h2>
             <ul>
                 .</p>
                 <li><b>Do you know someone in these companies</b>? Forward them the requests above, they will rather listen to a friend like you than a website like us.</li>
                 <li><b>Protect yourself</b>: check it out how reduce your <a href="https://myshadow.org/prevent-online-tracking">Digital Shadow</a>, or look at <a href="http://www.internetsociety.org/your-digital-footprint/what-is">these videos of Internet Society</a> if you want know more.</li>
-                <li><b>Do you know the owner of one of these websites</b>? They have to be more responsible about the inclusion of third party trackers! most of the time they don't really need that, but the effect is a massive targeted profiling</li>
+                <li><b>If you know owner of websites</b> ask them to control their third party trackers. Many time they are not even aware on how many are present.</li>
             </ul>
+        </div>
+
+
+        <div class="container">
+            <h3>F.A.Q.</h3>
+            <p><b>How do we found the trackers?</b> this analysis is done with the same approach used by <a href="https://webtransparency.cs.princeton.edu/webcensus/" target="_blank">Princeton University WebCensus</a> done 1 year ago. The technology used is the advancement of <a href="https://trackography.org">Trackography</a>, now <a hreF="https://invi.sible.link">invi.sible.link</a>.</p>
+            <p><b>Is this wiretapping?</b> No, That can be solved if website uses HTTPS, but this is a different kind of user survelliance. Provide knowledge on interest and trend, works over mass of people and can be <i>zoomed</i> to a nation, a neighbordood, a company, etc</p>
         </div>
 
         <div class="container">
             <h2 class="titles" id="about">About Us</h2>
-        </div>
-
-        <div class="container">
-            <p>This analysis is done with the same approach used by <a href="https://webtransparency.cs.princeton.edu/webcensus/" target="_blank">Princeton University WebCensus</a> done 1 year ago. The technology used is the advancement of <a href="https://trackography.org">Trackography</a>.</p>
             <table class="table table-striped">
                 <thead>
                     <tr>
@@ -140,21 +172,32 @@
                         <td><a href="https://facebook.tracking.exposed" target="_blank">facebook.tracking.exposed</a></td>
                         <td>analysis, management</td>
                     </tr>
-
                     <tr>
                         <td>Tullia Mancuso</td>
-                        <td>?</td>
+                        <td></td>
                         <td>research, revision</td>
                     </tr>
-
                     <tr>
                         <td><a href="https://twitter.com/maasalan" target="_blank">Mahsa Alimardani</a></td>
                         <td>Internet researcher</td>
                         <td>research, revision</td>
                     </tr>
+                    <tr>
+                        <td><a href="https://twitter.com/draganakaurin" target="_blank">Dragana Kaurin</a></td>
+                        <td><a href="https://www.localizationlab.org/" target="_blank">LocalizationLab</a></td>
+                        <td>consultant</td>
+                    </tr>
+
 
                 </tbody>
             </table>
         </div>
+
+        <div class="container">
+            <h3>Technical help</h3>
+            <p>The list of website analyzed above is supposed to reflect the content seen by an American Muslim. This task is a collaborative effort, propose your changes to the site list: <a href="https://github.com/tracking-exposed/amtrex/blob/master/culture-list.csv">Culture and generic Islamic websites</a>, <a href="https://github.com/tracking-exposed/amtrex/blob/master/halal-list.csv">Halal food shop</a>, <a href="https://github.com/tracking-exposed/amtrex/blob/master/mosques-list.csv">Mosques</a> and <a href="https://github.com/tracking-exposed/amtrex/blob/master/travel-list.csv">Travel agency for Hajj and 'Umra</a></p>
+            <p>Do you know any resource for webmaster to limit/reduce their trackers? analysis, alternatives? we can extend a section of support for webmaster, <a href="https://github.com/tracking-exposed/amtrex">open a PR in github</a>.</p>
+        </div>
+
     </body>
 </html>
