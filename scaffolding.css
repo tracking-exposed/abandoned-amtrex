@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5{
     text-align: center;
 }
 
-.textL {
+.lighter {
     font-size: 20px;
     font-family: 'Work Sans', sans-serif;
     padding-left: 3em;
@@ -29,21 +29,13 @@ h1,h2,h3,h4,h5{
 }
 
 
-.textR {
+.greener {
     font-size: 20px;
     font-family: 'Work Sans', sans-serif;
     padding-left: 3em;
     padding-bottom: 1em;
     padding-top: 1em;
     border: #b3fcc5;
-}
-
-.textL, .textR{
-  margin-left:-3em;
-}
-
-.reduced {
-    text-size: 0.8em;
 }
 
 

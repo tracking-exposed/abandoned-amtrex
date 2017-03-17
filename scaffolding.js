@@ -1,3 +1,14 @@
+
+function test() {
+    $(function(){
+                $('#nav').load('nav.html');
+                    });
+
+    $(function(){
+                $('.nav a:contains("page2")').addClass('active');
+                    });
+};
+
 function amtrexRender(chunk, containerId) {
 
     $(containerId).html("");

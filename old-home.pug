@@ -22,8 +22,8 @@ html
     meta(property='og:type', content='website')
     meta(property='og:description', content='This project takes the cue from the recent Muslim ban. Since algorithms can express the behavior of internet users, it suggests that sensible data can be easily exploited just taking advantage of third party trackers already existing on the internet for lawful reasons. It targets website management, citizens who practice Islam, and tracking companies and aims to finalize a method to collaborate against such a danger, by assessing, as a first step, the presence of third-party tracking.')
 
+
   body(onload="amtrexRender('mosques', '#table');")
-  include basicNavgar
     nav.navbar.navbar-default.navbar-fixed-top
       .container
         .navbar-header
@@ -39,36 +39,30 @@ html
               a(href='#requests') Reasonable requests
             li
               a(href='#support') Do something
-
-    .container
-        .firstcontent
-          h1 Exposing Online Tracking of American Muslims
-          h2 Who could have a registry?
-
-    .container
-        .yellow
-            p(class="quote") Both as a candidate and now as President, Donald Trump has made clear his intent to pursue aggressive policies targeting Muslims, refugees and immigrants under the banner of national security. In his first week in office Trump enacted the patently unlawful travel ban seeking to bar all refugees, and individuals from 7 Muslim-majority countries from entering the US. A second executive order the same week, as well as later accompanying policy memoranda, extended powers to law enforcement and immigration agencies to increase detention and deportation of undocumented immigrants.
-            p(class="source")
-                a(href="https://www.amnesty.org/en/latest/research/2017/02/muslim-registries-big-data-and-human-rights") "Muslim registries", Big Data and Human Rights
-            div(class="author") By Tanya O’Carroll, asesora de Tecnología y Derechos Humanos (@tanyaocarroll) 
-            div(class="author") Joshua Franco, investigador de Tecnología y Derechos Humanos (@joshyrama)
-
-
-    .container
-      p.greener Institutions of power will pass through a selection to find a target. This project is about this selection. In this age, it pass through institutional database and big data powered analysis. This last can affect aspect of life like insurance, bills, fines, hidden behind a curtain of algorithms.  
-
-      p.lighter This page is on web tracking, How can be used such technology in enabling religious based profiling. How we can raise awareness and reduce the risk?
-
-      p.lighter Quoting back the inspiring report of Amnesty:
-
-    .container
-      .yellow
-        p 
-          b But perhaps a “Muslim registry” — or list of deportation targets, for that matter — would not necessarily have to involve registration at all.
-        p The past 10 years have witnessed a boom in big data. The sheer scale of data about people,   combined with advances in data mining techniques, mean that hundreds of US companies now possess “super databases” of hundreds of millions of individually-identifiable consumers.
-
-      p.greener If an user accesses frequently these pages, or in a specific moment of the year, reaching them from specific online search, or from other contextual websites these are all cases in which an algorithm can assume the user is an active Islamic practitioner.
-      p.lighter These websites are ultimately responsible of the trackers served to their readers. Often they are not aware of which trackers they are including.
+    .container.firstcontent
+      h1 Exposing Online Tracking of American Muslims
+      h2 Who could have a registry?
+      p.textR
+        | This project takes the cue from the recent Muslim ban. Since algorithms can express the behavior of internet users, it suggests that sensible data can be easily exploited just taking advantage of third party trackers already existing on the internet for lawful reasons. It targets website management, citizens who practice Islam, and tracking companies and aims to finalize a method to collaborate against such a danger, by assessing, as a first step, the presence of third-party tracking.
+      p.textL
+        | If a user frequently accesses web pages intended for an Islamic audience, an algorithm could assume the user is an active Islamic practitioner. This normally is addressed as an advertigins effect, since the 2007 institutions address the 
+        a(href='https://epic.org/privacy/consumer/online_tracking_and_behavioral.html', target='_blank') phenomena
+        | , and recently new progress has been made by 
+        a(href='https://www.theatlantic.com/technology/archive/2017/02/browsing-history-identity/515763/') Stanford and Princetor researcher
+        | .
+      p.textR
+        b
+          | Now is it clear the impact is not just on advertising business, but on the life of a category actively threatened by discriminatory policies.
+      p.textL
+        | Who can do such monitoring? the website itself, but when you are connecting to a single website, truly, your device is connecting to many websites. They take name of 
+        b web trackers
+        |  and they can monitor your navigation across many websites.
+      p.textR When this happen, the assumption that you are muslim, became stronger.
+      p.textL
+        | Websites use trackers in their pages for different, and justified, reasons: advertising, analytics, social engagement. Just, considering the muslimban, a new sensibility is necessary by websites and by trackers. This campaign contains suggestions, below, that only your crowd can ask!
+      p
+      p.textR
+        | These websites are ultimately responsible of the trackers served to their readers. Often they are not aware of which trackers they are including.
     .container
       h2 Look the companies that could have this data&mldr;
       ul.nav.nav-tabs.nav-justified.reduced
@@ -89,12 +83,9 @@ html
             img(src='/campaign/culture.png')
           p.idesc Culture
       #table
-
-    include actionNavbar
-
     .container
       h2#requests.titles What the companies might do for your protection
-      p.lighter
+      p.textL
         | The companies have only a partial fault, they are in a Nation in which a gag order can force them to cooperate. A anticipated advice list was the one 
         a(href='https://www.eff.org/deeplinks/2016/11/tech-companies-fix-these-technical-issues-its-too-late') EFF made when Trump was still president Elected
         | .
@@ -158,21 +149,36 @@ html
         i zoomed
         |  to a nation, a neighbordood, a company, etc
     .container
-
-      h2#about.titles About
-      p This is a personal initiative of 
-        a(href='https://twitter.com/_vecna', target='_blank') Claudio Agosti
-        |, with the precious help of someone who is open in the networked world, with their support they influenced the project: Tullia Mancuso, 
-        a(href='https://twitter.com/maasalan', target='_blank') Mahsa Alimardani
-        |, 
-        a(href='https://twitter.com/draganakaurin', target='_blank') Dragana Kaurin
-        |, you can support the development via github, about the
-        a(href='https://www.github.com/vecna/invi.sible.link/', targrt='_blank') platform
-          b invi.sible.link
-        |, or the 
-        a(href='https://www.github.com/tracking-exposed/amtrex', target='_blank') American Muslims
-        | campaign.
-
+      h2#about.titles About Us
+      table.table.table-striped
+        thead
+          tr
+            th Name
+            th Affiliation
+            th for
+        tbody
+          tr
+            td
+              a(href='https://twitter.com/_vecna', target='_blank') Claudio Agosti
+            td
+              a(href='https://facebook.tracking.exposed', target='_blank') facebook.tracking.exposed
+            td analysis, management
+          tr
+            td Tullia Mancuso
+            td
+            td research, revision
+          tr
+            td
+              a(href='https://twitter.com/maasalan', target='_blank') Mahsa Alimardani
+            td Internet researcher
+            td research, revision
+          tr
+            td
+              a(href='https://twitter.com/draganakaurin', target='_blank') Dragana Kaurin
+            td
+              a(href='https://www.localizationlab.org/', target='_blank') LocalizationLab
+            td consultant
+    .container
       h3 Technical help
       p
         | The list of website analyzed above is supposed to reflect the content seen by an American Muslim. This task is a collaborative effort, propose your changes to the site list: 

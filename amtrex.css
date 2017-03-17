@@ -1,0 +1,35 @@
+.yellow {
+    margin: 40px;
+    padding: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #ff0;
+    text-align: justify;
+}
+
+.quote {
+    font-family: 'Monospace';
+    font-weight: 800;
+}
+
+.source {
+    text-align: right;
+    size: 0.6em;
+    font-family: 'Work Sans';
+
+}
+.source a:hover {
+    color: black;
+}
+
+.author {
+    font-size: 0.5em;
+    // background-color: black;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Work Sans'), url("/js/local/WorkSans.ttf") format('truetype');
+}
