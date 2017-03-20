@@ -1,14 +1,21 @@
-.firstcontent {
-    padding-top: 70px;
-}
-
 body {
     background-color: #d9f9e1;
     font-size: 18px;
 }
 
+.firstcontent {
+    padding-top: 70px;
+}
+
+@font-face {
+    font-family: 'FrancoisOne';
+    font-style: normal;
+    font-weight: 400;
+    src: local('FrancoisOne'), url("/js/local/FrancoisOne.ttf") format('truetype');
+}
+
 h1,h2,h3,h4,h5{
-    font-family: 'Sanchez', serif;
+    font-family: 'FrancoisOne', serif;
     margin-bottom:1em;
     font-weight:bold;
 }

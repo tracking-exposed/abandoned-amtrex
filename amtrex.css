@@ -18,7 +18,7 @@
     font-family: 'Work Sans';
 
 }
-.source a:hover {
+.source a a:hover {
     color: black;
 }
 
@@ -32,4 +32,8 @@
     font-style: normal;
     font-weight: 400;
     src: local('Work Sans'), url("/js/local/WorkSans.ttf") format('truetype');
+}
+
+.footer {
+    border-top: black 1px solid;
 }

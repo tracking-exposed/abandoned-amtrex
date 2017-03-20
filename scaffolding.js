@@ -1,16 +1,26 @@
+function setupLanding(where) {
 
-function test() {
-    $(function(){
-                $('#nav').load('nav.html');
-                    });
+    $("#content").load('/landing', function () {
+        console.log("loaded!");
+        amtrexRender('mosques', '#table');
+    });
+};
 
-    $(function(){
-                $('.nav a:contains("page2")').addClass('active');
-                    });
+function loadPage(e, destpage) {
+
+    console.log("loadPage", e, destpage);
+
+    $("#content").load(destpage, function () {
+        console.log("loaded!");
+    });
+
+    $('.active').removeClass('active');
+    $(this).addClass('active');
 };
 
 function amtrexRender(chunk, containerId) {
 
+    console.log("amtrexRender");
     $(containerId).html("");
 
     var margin = {top: 30, right: 30, bottom: 30, left: 30},
