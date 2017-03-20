@@ -27,12 +27,12 @@ html
         nav.navbar.navbar-default.navbar-fixed-top
             .container-fluid
                 ul.nav.navbar-nav
-                    li.active
-                        a(onclick='loadPage(this, "landing");' class='links') Observer
-                    li
-                        a(onclick='loadPage(this, "what-to-do");' class='links') What to do
-                    li
-                        a(onclick='loadPage(this, "about");' class='links') About
+                    li(class="landing")
+                        a(onclick='loadPage("#content", "landing");' class='links') Observer
+                    li(class="what-to-do")
+                        a(onclick='loadPage("#content", "what-to-do");' class='links') What to do
+                    li(class="about")
+                        a(onclick='loadPage("#content", "about");' class='links') About
 
                 .navbar-header.navbar-right
                     a.navbar-brand Watch the watchers!

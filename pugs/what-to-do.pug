@@ -1,22 +1,67 @@
 .container
-    h3 Websites selection
-    p The site tested are suggested by the online community and monderated by maintainers. We&apos;ve to crowdsource, because an intelligence agency or a global advertiser knows which are the readers and the content of websites, but nobody other does. We&apos;ve to relay in an open process to provide an useful feedback to the public. The website tested, and the analysis output, are kept 
-        a(href='https://github.com/tracking-exposed/amtrex/') In a git repostory
+    h2 What you might do
+    p.lighter I'll take it simple: 
+        a(href="https://adblockplus.org/" target="_blank") install and AdBlocker and disable it only only for news websites
         |.
 
+.container
+    h2 What the companies might do for your protection
+    p.greener The companies have only a partial fault, they are in a Nation in which a gag order can force them to cooperate. A anticipated advice list was the one 
+        a(href='https://www.eff.org/deeplinks/2016/11/tech-companies-fix-these-technical-issues-its-too-late') EFF made when Trump was still president Elected
+        |.
+    h3 Some practical question for their employees:
+    ul.greener
+        li How easy is it to link the collected profiles to a phone number (and to a physical ID)? Can you minimize your data collected into groups of users instead of keeping personal behavior&apos;s history? We will assume you are keeping individual personal profile unless otherwise stated.
+        li The access itself to such website creates 
+            a(href='https://www.teachprivacy.com/sensitive-data-different-definitions-privacy-law/', target='_blank') sensitive data
+            |; Would be appropriate treat all users navigating in those sites 
+            b as if
+            |  they have 
+            a(href='https://en.wikipedia.org/wiki/Do_Not_Track', target='_blank') Do Not Track
+            |  enabled (Note: 
+            a(href="http://abcnews.go.com/Technology/wireStory/facebook-data-surveillance-46104496") Facebook gived a nice declaration of intent
+            |; Indeed they disply a
+            a(href="https://theintercept.com/2017/03/02/palantir-provides-the-engine-for-donald-trumps-deportation-machine/") different style compared to Palantir
+            |, but still, technical solutions like the end2end deployment gives a measureable security, words are nice but words don't protect against Intelligence infiltrating facebook nor against National Security Letters)
+        li Can you disclose the amount and the kind of metadata you collect? considering these data describe societal behavior, knowing who has more metadata is in the public interest.
+        li If your company, ever got any request of user selection based on their religious beliefs: send a tip off to the investigative journalists of 
+            a(href='https://www.propublica.org/article/how-to-leak-to-propublica', target='_blank') ProPublica
+            | , they wrote this 
+            a(href='https://www.propublica.org/article/facebook-lets-advertisers-exclude-users-by-race', target='_blank') story on racial profiling perfomed by Facebook
+            | : but how many other companies can do the same?
+        li Have you ever been compromised? do you have any mechanism that might prevent unfaithful employee or remote attacker to steal profile based data from your server? We have to assume you are not protected if not otherwise stated.
 
 .container
-    h3 Technical help
-    p The list of website analyzed above is supposed to reflect the content seen by an American Muslim. This task is a collaborative effort, propose your changes to the site list: 
-        a(href='https://github.com/tracking-exposed/amtrex/blob/master/culture-list.csv') Culture and generic Islamic websites
-        |, 
-        a(href='https://github.com/tracking-exposed/amtrex/blob/master/halal-list.csv') Halal food shop
-        |, 
-        a(href='https://github.com/tracking-exposed/amtrex/blob/master/mosques-list.csv') Mosques
-        |  and 
-        a(href='https://github.com/tracking-exposed/amtrex/blob/master/travel-list.csv') Travel agency for Hajj and &apos;Umra.
+    h2 Is it important spread the word!
+    ul.greener
+        li 
+            b Do you know someone in these companies
+            | ? Forward them the requests above, they will rather listen to a friend like you than a website like us.
+        li
+            b Protect yourself
+            | : check it out how reduce your 
+            a(href='https://myshadow.org/prevent-online-tracking') Digital Shadow
+            | , or look at 
+            a(href='http://www.internetsociety.org/your-digital-footprint/what-is') these videos of Internet Society
+            |  if you want know more.
+        li
+            b If you know owner of websites
+            |  ask them to control their third party trackers. Many time they are not even aware on how many are present.
 
-    p Do you know any resource for webmaster to limit/reduce their trackers? analysis tool and alternatives services? Please suggest us with a 
-        a(href='https://github.com/tracking-exposed/amtrex') pull request
-        | .
+.container
+    h2 F.A.Q.
+    p.lighter
+        b How do we found the trackers?
+        |  this analysis is done with the same approach used by 
+        a(href='https://webtransparency.cs.princeton.edu/webcensus/', target='_blank') Princeton University WebCensus
+        |  done 1 year ago. The technology used is the advancement of 
+        a(href='https://trackography.org') Trackography
+        | , now 
+        a(href='https://invi.sible.link') invi.sible.link
+        | . The process of attribution between third party trackers → company name → company nation is quite manual, slow, and open to mistakes.
+    p.greener
+        b Is this wiretapping?
+        |  No, That can be solved if website uses HTTPS, but this is a different kind of user survelliance. Provide knowledge on interest and trend, works over mass of people and can be 
+        i zoomed
+        |  to a nation, a neighbordood, a company, etc
 

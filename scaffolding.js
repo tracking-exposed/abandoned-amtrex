@@ -1,21 +1,30 @@
 function setupLanding(where) {
 
-    $("#content").load('/landing', function () {
-        console.log("loaded!");
-        amtrexRender('mosques', '#table');
+    if(!where) {
+        where = window.location.href.split('/').pop();
+
+        if(where !== 'landing' || where !== 'what-to-do' || where !== 'about')
+            where = 'landing';
+    }
+
+    $("#content").load('/direct/' + where, function () {
+        if(where === 'landing') 
+            amtrexRender('mosques', '#table');
+
+        $('.' + where).addClass('active');
     });
 };
 
-function loadPage(e, destpage) {
+function loadPage(containerId, destpage) {
 
-    console.log("loadPage", e, destpage);
-
-    $("#content").load(destpage, function () {
-        console.log("loaded!");
+    $("#content").load("/direct/" + destpage, function () {
+        history.pushState({'nothing': true}, "American Muslims " + destpage, destpage);
     });
+    if(destpage === 'landing') 
+        amtrexRender('mosques', '#table');
 
-    $('.active').removeClass('active');
-    $(this).addClass('active');
+    $('li').removeClass('active');
+    $('.' + destpage).addClass('active');
 };
 
 function amtrexRender(chunk, containerId) {
@@ -38,7 +47,7 @@ function amtrexRender(chunk, containerId) {
         var g = d3
             .select(containerId)
             .append("svg")
-            .attr("width", width + margin.left + margin.right )
+            .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
               .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.bottom + ")");
@@ -152,7 +161,7 @@ function amtrexRender(chunk, containerId) {
             .attr("transform", null)
             /* in theory I've d.href with http or https, but in practice I'm loosing that attribute with sankey mangling */
             /* note: I was putting a simple link here, but on mobile platform was not display, so I'll removed and bon. */
-            .html(function(d) { console.log(d); return "<a target='_blank' href='http://" + d.name + "'>-----------</a>"; })
+            .html(function(d) { return "<a target='_blank' href='http://" + d.name + "'>-----------</a>"; })
             .style("font-weight", "bolder")
             .style("background-color", "#f1ffea")
             .style("font-size","11px")
