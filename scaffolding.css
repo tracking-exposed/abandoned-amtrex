@@ -127,3 +127,8 @@ p.lighter a {
     color: #fff;
     text-decoration: underline;
 }
+
+p.text a {
+    font-weight: bold;
+    text-decoration: underline;
+}
