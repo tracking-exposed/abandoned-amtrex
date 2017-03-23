@@ -8,7 +8,7 @@ function setupLanding(where) {
     }
 
     $("#content").load('/direct/' + where, function () {
-        if(where === 'landing') 
+        if(where === 'landing')
             amtrexRender('mosques', '#table');
 
         $('.' + where).addClass('active');
@@ -20,7 +20,7 @@ function loadPage(containerId, destpage) {
     $("#content").load("/direct/" + destpage, function () {
         history.pushState({'nothing': true}, "American Muslims " + destpage, destpage);
     });
-    if(destpage === 'landing') 
+    if(destpage === 'landing')
         amtrexRender('mosques', '#table');
 
     $('li').removeClass('active');
@@ -31,9 +31,11 @@ function amtrexRender(chunk, containerId) {
 
     console.log("amtrexRender");
     $(containerId).html("");
+    $('.nav-justified li p').removeClass('selected');
+    $('.nav-justified li#' + chunk + ' p').addClass('selected');
 
     var margin = {top: 30, right: 30, bottom: 30, left: 30},
-        width = 960 - margin.left - margin.right,
+        width = $('#table').width() - margin.left - margin.right,
         height = 900 - margin.top - margin.bottom;
 
     var nodeWidth = 5;
@@ -163,7 +165,7 @@ function amtrexRender(chunk, containerId) {
             /* note: I was putting a simple link here, but on mobile platform was not display, so I'll removed and bon. */
             .html(function(d) { return "<a target='_blank' href='http://" + d.name + "'>-----------</a>"; })
             .style("font-weight", "bolder")
-            .style("background-color", "#f1ffea")
+            .style("background-color", "#ffffff")
             .style("font-size","11px")
             .style("font-family","Arial, Helvetica");
         g
@@ -189,4 +191,3 @@ function amtrexRender(chunk, containerId) {
 
     });
 };
-
