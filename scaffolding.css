@@ -1,10 +1,6 @@
 body {
-    background-color: #d9f9e1;
+    background-color: #ffffff;
     font-size: 18px;
-}
-
-.firstcontent {
-    padding-top: 70px;
 }
 
 @font-face {
@@ -14,13 +10,14 @@ body {
     src: local('FrancoisOne'), url("/js/local/FrancoisOne.ttf") format('truetype');
 }
 
-h1,h2,h3,h4,h5{
+h1, h2, h3, h4, h5 {
     font-family: 'FrancoisOne', serif;
-    margin-bottom:1em;
-    font-weight:bold;
+    margin-bottom: 1em;
+    font-weight: bold;
 }
 
 .idesc {
+    cursor: pointer;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     text-align: center;
@@ -29,12 +26,18 @@ h1,h2,h3,h4,h5{
 .lighter {
     font-size: 20px;
     font-family: 'Work Sans', sans-serif;
-    padding-left: 3em;
-    background-color: #b3fcc5;
+    padding-left: 34px;
+    background-color: ##f55757;
     padding-bottom: 1em;
     padding-top: 1em;
+    width: 77%;
+    padding-right: 34px;
 }
 
+.lighter a, .lighter a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
 
 .greener {
     font-size: 20px;
@@ -45,8 +48,87 @@ h1,h2,h3,h4,h5{
     border: #b3fcc5;
 }
 
-
 #table {
     /* background-image: url('fixtures/background.png'); */
-    background-color: #f1ffea;
+    background-color: #ffffff;
+    margin-bottom: 80px;
+}
+
+.navbar-default {
+    background-color: #f55757;
+}
+
+.navbar-default .navbar-nav>li>a.links {
+    color: #000000;
+    cursor: pointer;
+}
+
+.navbar-default .navbar-nav>.active>a.links {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+    color: #000000;
+}
+
+.firstcontent {
+    padding-top: 140px;
+}
+
+.firstcontent h1 {
+    font-size: 54px;
+    width: 55%;
+}
+
+.firstcontent h1 {
+    font-size: 26px;
+}
+
+.text {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.text, .nav-tabs.nav-justified {
+    width: 55%;
+}
+
+.nav-tabs.nav-justified {
+    margin-bottom: 20px;
+}
+
+img {
+    vertical-align: baseline;
+    width: 60%;
+}
+
+.nav-tabs.nav-justified>li>a {
+    border: none;
+    cursor: pointer;
+}
+
+.selected {
+    text-decoration: underline;
+}
+
+.first {
+    margin-top: 140px;
+}
+
+ul.text li {
+    margin-bottom: 18px;
+}
+
+ul.text li a {
+    text-decoration: underline;
+}
+
+p.lighter a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+p.text a {
+    font-weight: bold;
+    text-decoration: underline;
 }
