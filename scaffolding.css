@@ -125,7 +125,7 @@ p.text a {
     text-decoration: underline;
 }
 
-@media (min-width: @screen-sm-min) {
+@media (min-width: 768px) {
     .firstcontent {
         padding-top: 70px;
     }

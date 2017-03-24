@@ -41,7 +41,7 @@
     border-top: black 1px solid;
 }
 
-@media (min-width: @screen-sm-min) {
+@media (min-width: 768px) {
     .yellow {
         padding: 40px 140px;
         padding-right: 320px;
