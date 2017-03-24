@@ -6,19 +6,18 @@
 }
 
 .yellow {
-    padding: 40px 140px;
-    padding-right: 320px;
+    padding: 40px 0;
     text-align: justify;
 }
 
 .quote {
+    background: -webkit-linear-gradient(top left, #FFFFCC, yellow);
     background: linear-gradient(to bottom right, #FFFFCC, yellow); /* Standard syntax */
     font-family: 'Monospace';
     font-style: italic;
     font-weight: 500;
     font-style: italic;
     font-size: 18px;
-    line-height: 1.7;
 }
 
 .source {
@@ -40,4 +39,14 @@
 
 .footer {
     border-top: black 1px solid;
+}
+
+@media (min-width: @screen-sm-min) {
+    .yellow {
+        padding: 40px 140px;
+        padding-right: 320px;
+    }
+    .quote {
+        line-height: 1.7;
+    }
 }
