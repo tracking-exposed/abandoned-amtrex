@@ -73,15 +73,16 @@ h1, h2, h3, h4, h5 {
 }
 
 .firstcontent {
-    padding-top: 70px;
+    padding-top: 200px;
 }
 
 .text {
     font-family: 'Work Sans', sans-serif;
+    text-align: justify;
 }
 
 .text, .nav-tabs.nav-justified {
-    width: 55%;
+    width: 100%;
 }
 
 .nav-tabs.nav-justified {
@@ -103,7 +104,7 @@ img {
 }
 
 .first {
-    margin-top: 140px;
+    margin-top: 200px;
 }
 
 ul.text li {
@@ -122,4 +123,17 @@ p.lighter a {
 p.text a {
     font-weight: bold;
     text-decoration: underline;
+}
+
+@media (min-width: @screen-sm-min) {
+    .firstcontent {
+        padding-top: 70px;
+    }
+    .text, .nav-tabs.nav-justified {
+        width: 55%;
+        text-align: left;
+    }
+    .first {
+        margin-top: 140px;
+    }
 }
