@@ -172,8 +172,8 @@ function amtrexRender(chunk, containerId) {
             .selectAll(".label")
             .data([
                 { x: 14, name: 'site' },
-                { x: 490, name: 'third party' },
-                { x: 920, name: 'responds to' }
+                { x: 590, name: 'third party' },
+                { x: 1080, name: 'responds to' }
             ])
             .enter()
             .append("text")
