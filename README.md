@@ -9,14 +9,11 @@ TODO write the editing policy
 
 ## index.html
 
-
 TODO write the editing policy and the technical limit that might be fixed
 
 ## Updated notes
 
     for i in [ 'halal' 'mosques' 'travel' 'culture' ]; do DEBUG=* bin/directionTool.js --csv campaigns/amtrex/$i-list.csv --taskName $i; done
-
-
 
 ## Notes
 
@@ -48,4 +45,3 @@ TODO write the editing policy and the technical limit that might be fixed
     DEBUG=* src=amtrex/halal-list.json dst=amtrex/halal campaign=halal ./jsonerate.js 
     DEBUG=* src=amtrex/travel-list.json dst=amtrex/travel campaign=travel ./jsonerate.js 
     DEBUG=* src=amtrex/mosques-list.json dst=amtrex/mosques campaign=mosques ./jsonerate.js 
-

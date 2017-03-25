@@ -24,14 +24,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .lighter {
-    font-size: 20px;
+    font-size: 1.3em;
     font-family: 'Work Sans', sans-serif;
-    padding-left: 34px;
     background-color: ##f55757;
     padding-bottom: 1em;
     padding-top: 1em;
-    width: 77%;
-    padding-right: 34px;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 .lighter a, .lighter a:hover {
@@ -40,12 +39,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .greener {
-    font-size: 20px;
+    font-size: 1.3em;
     font-family: 'Work Sans', sans-serif;
-    padding-left: 3em;
+    border: #b3fcc5;
     padding-bottom: 1em;
     padding-top: 1em;
-    border: #b3fcc5;
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
 #table {
@@ -72,10 +72,6 @@ h1, h2, h3, h4, h5 {
 
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
     color: #000000;
-}
-
-.firstcontent {
-    padding-top: 200px;
 }
 
 .text {

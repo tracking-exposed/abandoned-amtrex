@@ -22,8 +22,15 @@ function loadPage(containerId, destpage) {
     $('.' + destpage).addClass('active');
 
     $("#content").load("/direct/" + destpage, function () {
+
+        setTimeout(function() {
+            if(destpage=== 'landing') {
+                amtrexRender(_.sample(['mosques', 'halal', 'travel', 'culture']), '#table');
+            }
+        }, 200);
         history.pushState({'nothing': true}, "American Muslims " + destpage, destpage);
     });
+
 };
 
 function amtrexRender(chunk, containerId) {
