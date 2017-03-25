@@ -12,6 +12,11 @@ TODO write the editing policy
 
 TODO write the editing policy and the technical limit that might be fixed
 
+## Updated notes
+
+    for i in ['halal' 'mosques' 'travel' 'hajj' ]; do DEBUG=* bin/directionTool.js --csv campaigns/amtrex/$i-list.csv --taskName $i; done
+
+
 
 ## Notes
 

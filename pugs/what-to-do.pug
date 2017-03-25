@@ -1,15 +1,22 @@
-.container.first
-    h2 What you might do
+.container.firstcontent
+
+    h3 for yourself
     p.text I'll take it simple: 
         a(href="https://www.ublock.org/" target="_blank") install ublock (a kind of adblocker) and disable it only for news websites
         |.
 
+    h3 for the web-environment
+    p.text Third party inclusions happen many times, for technical reason. is not a problem per se, still we've to aim for a reduction, having HTTPS for the few, and ensure log removal ASAP; every third party inclusion might create a profile of you, and this can harm you and the society. The best metaphor to is still 
+        a(href="https://www.theguardian.com/technology/2008/jan/15/data.security") Toxic waste
+        |  from Cory Doctorw.
+
 .container
-    h2 What the companies might do for your protection
+    h2 and the companies ? what they might do for your protection
     p.text The companies have only a partial fault, they are in a Nation in which a gag order can force them to cooperate. A anticipated advice list was the one 
         a(href='https://www.eff.org/deeplinks/2016/11/tech-companies-fix-these-technical-issues-its-too-late') EFF made when Trump was still president Elected
         |.
-    h3 Some practical question for their employees:
+
+    h3 Open questions and nice long term solutions:
     ul.text
         li How easy is it to link the collected profiles to a phone number (and to a physical ID)? Can you minimize your data collected into groups of users instead of keeping personal behavior&apos;s history? We will assume you are keeping individual personal profile unless otherwise stated.
         li The access itself to such website creates 
@@ -30,18 +37,20 @@
             a(href='https://www.propublica.org/article/facebook-lets-advertisers-exclude-users-by-race', target='_blank') story on racial profiling performed by Facebook
             | : but how many other companies can do the same?
         li Have you ever been compromised? do you have any mechanism that might prevent unfaithful employee or remote attacker to steal profile based data from your server? We have to assume you are not protected if not otherwise stated.
+        li Soon the European Data Protection Regulation will be in place, are the safeguards ready? Which interaction would have Donald Trump in the Privacy Shield? Why you pursue a model of differencial-privacy based on citizenship? Wouldn't be easier do business and social activities if ONE framework is in place?
+        li Do you include in the transparency report the data about mass requests? can you differenciate when a target is a group or an individual?
 
 .container
-    h2 Is it important spread the word!
+    h2 You are a node in a network
     ul.text
         li
             b Do you know someone in these companies
-            | ? Forward them the requests above, they will rather listen to a friend like you than a website like us.
+            | ? Forward them the idea above, they will rather listen to a friend like you than a website like us.
         li
             b Protect yourself
             | : check it out how reduce your 
             a(href='https://myshadow.org/prevent-online-tracking') Digital Shadow
-            | , or look at 
+            | , or look at  
             a(href='http://www.internetsociety.org/your-digital-footprint/what-is') these videos of Internet Society
             |  if you want know more.
         li
@@ -50,17 +59,16 @@
 
 .container
     h2 F.A.Q.
-    p.lighter
-        b How do we found the trackers?
-        |  this analysis is done with the same approach used by 
+    p.question How do we found the trackers?
+    p.text The analysis is based on this approach used by 
         a(href='https://webtransparency.cs.princeton.edu/webcensus/', target='_blank') Princeton University WebCensus
-        |  done 1 year ago. The technology used is the advancement of 
+        | done 1 year ago. The technology is the advancement of 
         a(href='https://trackography.org') Trackography
-        | , now 
+        |, now grown in this framework: 
         a(href='https://invi.sible.link') invi.sible.link
-        | . The process of attribution between third party trackers → company name → company nation is quite manual, slow, and open to mistakes.
-    p.text
-        b Is this wiretapping?
-        |  No, That can be solved if website uses HTTPS, but this is a different kind of user surveillance. Provide knowledge on interest and trend, works over mass of people and can be
+        |. Attribute third party to companies and to nation might have still problems.
+    p.question Is this wiretapping?
+    p.text No, That can be solved if website uses HTTPS, but this is a different kind of user surveillance. Provide knowledge on interest and trend, works over mass of people and can be
         i zoomed
-        |  to a nation, a neighborhood, a company, etc…
+        | to a nation, a neighborhood, a company, etc…
+

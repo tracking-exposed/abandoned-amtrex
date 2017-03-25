@@ -33,10 +33,14 @@ html
                         a(onclick='loadPage("#content", "what-to-do");' class='links') What to do
                     li(class="about")
                         a(onclick='loadPage("#content", "about");' class='links') About
-
-                .navbar-header.navbar-right
-                    a.navbar-brand Other initiatives
-
+                    li.dropdown
+                        a.dropdown-toggle(data-toggle='dropdown', href='#') Other initiatives
+                            span.caret
+                        ul.dropdown-menu
+                            li
+                                a(href='#') italian.newspaper.tracking.exposed
+                            li
+                                a(href='#') facebook.tracking.exposed
 
         div#content
 

@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .lighter a, .lighter a:hover {
-    color: #fff;
+    color: white;
     text-decoration: underline;
 }
 
@@ -55,11 +55,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .navbar-default {
-    background-color: #f55757;
+    background-color: #93c993;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
 }
 
 .navbar-default .navbar-nav>li>a.links {
-    color: #000000;
+    color: white;
     cursor: pointer;
 }
 

@@ -13,23 +13,22 @@ function setupLanding(where) {
 
         $('.' + where).addClass('active');
     });
+
 };
 
 function loadPage(containerId, destpage) {
 
+    $('li').removeClass('active');
+    $('.' + destpage).addClass('active');
+
     $("#content").load("/direct/" + destpage, function () {
         history.pushState({'nothing': true}, "American Muslims " + destpage, destpage);
     });
-    if(destpage === 'landing')
-        amtrexRender('mosques', '#table');
-
-    $('li').removeClass('active');
-    $('.' + destpage).addClass('active');
 };
 
 function amtrexRender(chunk, containerId) {
 
-    console.log("amtrexRender");
+    console.log("amtrexRender " + chunk);
     $(containerId).html("");
     $('.nav-justified li p').removeClass('selected');
     $('.nav-justified li#' + chunk + ' p').addClass('selected');
