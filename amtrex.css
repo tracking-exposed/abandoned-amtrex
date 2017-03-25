@@ -13,6 +13,7 @@
 .quote {
     background: -webkit-linear-gradient(top left, #FFFFCC, yellow);
     background: linear-gradient(to bottom right, #FFFFCC, yellow); /* Standard syntax */
+    padding: 1em;
     font-family: 'Monospace';
     font-style: italic;
     font-weight: 500;
