@@ -14,6 +14,8 @@ TODO write the editing policy and the technical limit that might be fixed
 ## Updated notes
 
     for i in [ 'halal' 'mosques' 'travel' 'culture' ]; do DEBUG=* bin/directionTool.js --csv campaigns/amtrex/$i-list.csv --taskName $i; done
+    for i in  'halal' 'mosques' 'travel' 'culture'; do echo $i; done
+
 
 ## Notes
 
