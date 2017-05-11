@@ -8,14 +8,16 @@ html
         script(type='text/javascript', src='/js/vendor/jquery.js')
         script(type='text/javascript', src='/js/bootstrap.min.js')
         script(type='text/javascript', src='/js/lodash.min.js')
+        script(type='text/javascript', src='/js/vendor/moment.min.js')
 
         script(type='text/javascript', src='js/vendor/d3.min.js')
         script(type='text/javascript', src='js/vendor/d3-sankey.min.js')
 
-        script(type='text/javascript', src='/campaign/scaffolding.js')
-        link(rel='stylesheet', href='/campaign/scaffolding.css')
+        script(type='text/javascript', src='js/local/trex.js')
+        link(rel='stylesheet', href='js/local/trex.css')
 
-        link(rel='stylesheet', href='/campaign/amtrex.css')
+        link(rel='stylesheet', type='text/css', href='/css/datatables.min.css')
+        script(type='text/javascript', charset='utf8', src='/js/datatables.min.js')
 
         meta(property='og:title', content='american.muslims.tracking.exposed')
         meta(property='og:image', content='https')
@@ -23,15 +25,15 @@ html
         meta(property='og:type', content='website')
         meta(property='og:description', content='This project takes the cue from the recent Muslim ban. Since algorithms can express the behavior of internet users, it suggests that sensible data can be easily exploited just taking advantage of third party trackers already existing on the internet for lawful reasons. It targets website management, citizens who practice Islam, and tracking companies and aims to finalize a method to collaborate against such a danger, by assessing, as a first step, the presence of third-party tracking.')
 
-    body(onload='setupLanding();')
+    body(onload='initializeLanding(null, "mosques", "American Muslims Tracking Exposed: ", "#sankeytable");')
 
         nav.navbar.navbar-default.navbar-fixed-top
             .container
                 ul.nav.navbar-nav
                     li(class="landing")
-                        a(onclick='loadPage("#content", "landing");' class='links') Observer
+                        a(onclick='loadPage("#content", "landing");' class='links') Home
                     li(class="what-to-do")
-                        a(onclick='loadPage("#content", "what-to-do");' class='links') What to do
+                        a(onclick='loadPage("#content", "what-to-do");' class='links') Know more
                     li(class="about")
                         a(onclick='loadPage("#content", "about");' class='links') About
                     li.dropdown

@@ -1,55 +1,60 @@
 .container
     .firstcontent
-        h1 THIS IS A PROTOTYPE -- DO NOT SHARE -- CONTENT IN REVISION
-        h1 THIS IS A PROTOTYPE -- DO NOT SHARE -- CONTENT IN REVISION
         h3 Exposing Online Tracking of American Muslims
-        p.text
-            | This project takes the cue from the recent Muslim ban made by newly elected president Donald Trump. We asked ourselves, how can web tracking technologies be used for religious profiling? How can we raise awareness and reduce the social impact posed by the MassiveProfilingBusiness™ in this context?
-            br
-            | By looking at the trackers present on some of the most used websites by the Muslim community, one could argue that the information gathered by those trackers could be used by the U.S. government to enforce the ban. These websites then become a sort of registry providers.
-        h2 Who could have a registry?
+        p.text This project takes the cue from the recent Muslim ban made by newly elected president Donald Trump. We asked ourselves, how can web tracking technologies be used for religious profiling? How can we raise awareness and reduce the social impact posed by the BigDataBusiness™ in this context?
+        p.text.lighter We’ve isolated four kind of digital content that might be used to profile you as a Muslim.
 
     ul.nav.nav-tabs.nav-justified.reduced
         li#halal(role='presentation')
-            a(onclick="amtrexRender('halal', '#table');")
+            a(onclick="trexRender('halal', '#sankeytable');")
                 img(src='/campaign/halal.png')
             p.idesc.selected Halal food
         li#travel(role='presentation')
-            a(onclick="amtrexRender('travel', '#table');")
+            a(onclick="trexRender('travel', '#sankeytable');")
                 img(src='/campaign/hajj.png')
             p.idesc Hajj &apos;Umra trips
         li#mosques(role='presentation')
-            a(onclick="amtrexRender('mosques', '#table');")
+            a(onclick="trexRender('mosques', '#sankeytable');")
                 img(src='/campaign/mosque.png')
             p.idesc Mosques
         li#culture(role='presentation')
-            a(onclick="amtrexRender('culture', '#table');")
+            a(onclick="trexRender('culture', '#sankeytable');")
                 img(src='/campaign/culture.png')
             p.idesc Culture
-    #table
+    #sankeytable
 
 .container
     .yellow
-        p(class="quote") Both as a candidate and now as President, Donald Trump has made clear his intent to pursue aggressive policies targeting Muslims, refugees and immigrants under the banner of national security.        p(class="source")
-            a(href="https://www.amnesty.org/en/latest/research/2017/02/muslim-registries-big-data-and-human-rights")
-                | "Muslim registries", Big Data and Human Rights
-                br
-                | – Amnesty International report
-
-.container
-    .yellow
-        p.quote
-            b But perhaps a “Muslim registry” — or list of deportation targets, for that matter — would not necessarily have to involve registration at all. 
-            | The past 10 years have witnessed a boom in big data. 
+        p(class="quote") Both as a candidate and now as President, Donald Trump has made clear his intent to pursue aggressive policies targeting Muslims, refugees and immigrants under the banner of national security.
         p(class="source")
             a(href="https://www.amnesty.org/en/latest/research/2017/02/muslim-registries-big-data-and-human-rights")
                 | "Muslim registries", Big Data and Human Rights
                 br
                 | – Amnesty International report
 
-    p.text We’ve isolated four kind of digital content that might be used to profile you as a Muslim.
+    p.text By looking at the trackers present on some of the most used websites by the Muslim community, one could argue that the information gathered by those trackers could be used by the U.S. government to enforce the ban. These websites then become a sort of registry providers.
 
-    p.text These websites are ultimately responsible for the trackers served to their readers. Often they are not aware of which trackers they are including.
+    .yellow
+        p.quote
+            b But perhaps a “Muslim registry” — or list of deportation targets, for that matter — would not necessarily have to involve registration at all. 
+            | The past 10 years have witnessed a boom in big data. 
 
+    p.text.lighter These websites are ultimately responsible for the trackers served to their readers. Often they are not aware of which trackers they are including.
 
+    h2 React!
+    h3 for Web Users
+    .tableContainer
+        span.col-md-1
+        span.col-md-5.lighter
+            p Install and adblocker
+            p for Chrome
+            p for Firefox
+            p for Android
+            p for Windows
+        span.col-md-1
+        span.col-md-5.lighter
+            p You might disable it, but 
+                a(href="https://www.technologyreview.com/s/601057/are-ad-blockers-needed-to-stay-safe-online/") it is actually necessary
+                |  to stay safe online
+                
 include footer
