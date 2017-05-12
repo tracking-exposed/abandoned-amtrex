@@ -25,17 +25,17 @@ html
         meta(property='og:type', content='website')
         meta(property='og:description', content='This project takes the cue from the recent Muslim ban. Since algorithms can express the behavior of internet users, it suggests that sensible data can be easily exploited just taking advantage of third party trackers already existing on the internet for lawful reasons. It targets website management, citizens who practice Islam, and tracking companies and aims to finalize a method to collaborate against such a danger, by assessing, as a first step, the presence of third-party tracking.')
 
-    body(onload='initializeLanding(null, "mosques", "American Muslims Tracking Exposed: ", "#sankeytable");')
+    body(onload='initializeLanding(null, "mosques", "American Muslims Tracking Exposed: ");')
 
         nav.navbar.navbar-default.navbar-fixed-top
             .container
                 ul.nav.navbar-nav
                     li(class="landing")
-                        a(onclick='loadPage("#content", "landing");' class='links') Home
+                        a(onclick='loadPage("landing");' class='links') Home
                     li(class="what-to-do")
-                        a(onclick='loadPage("#content", "what-to-do");' class='links') Know more
+                        a(onclick='loadPage("what-to-do");' class='links') Know more
                     li(class="about")
-                        a(onclick='loadPage("#content", "about");' class='links') About
+                        a(onclick='loadPage("about");' class='links') About
                     li.dropdown
                         a.dropdown-toggle(data-toggle='dropdown', href='#') Other initiatives
                             span.caret

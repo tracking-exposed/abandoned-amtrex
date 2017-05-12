@@ -1,0 +1,40 @@
+.container.firstcontent
+    h3 Full results
+
+    p.text This is a table containing all the results of the analized sites. 
+
+    ul.nav.nav-tabs.nav-justified.reduced
+        li#halal(role='presentation')
+            a(onclick="trexArchive('halal', '#archivetable');")
+                img(src='/campaign/halal.png')
+            p.idesc.selected Halal food
+        li#travel(role='presentation')
+            a(onclick="trexArchive('travel', '#archivetable');")
+                img(src='/campaign/hajj.png')
+            p.idesc Hajj &apos;Umra trips
+        li#mosques(role='presentation')
+            a(onclick="trexArchive('mosques', '#archivetable');")
+                img(src='/campaign/mosque.png')
+            p.idesc Mosques
+        li#culture(role='presentation')
+            a(onclick="trexArchive('culture', '#archivetable');")
+                img(src='/campaign/culture.png')
+            p.idesc Culture
+
+    table#archivetable.display(cellspacing='0', width='100%')
+        thead
+            tr
+                th Site
+                th Companies
+                th scripts
+                th unique 3rd parties
+                th when
+        tfood
+            tr
+                th Site
+                th Companies
+                th scripts
+                th unique 3rd parties
+                th when
+
+
