@@ -41,20 +41,94 @@
 
     p.text.lighter These websites are ultimately responsible for the trackers served to their readers. Often they are not aware of which trackers they are including.
 
-    h2 React!
+    h1 React!
     h3 for Web Users
     .tableContainer
-        span.col-md-1
-        span.col-md-5.lighter
-            p Install and adblocker
-            p for Chrome
-            p for Firefox
-            p for Android
-            p for Windows
-        span.col-md-1
-        span.col-md-5.lighter
-            p You might disable it, but 
-                a(href="https://www.technologyreview.com/s/601057/are-ad-blockers-needed-to-stay-safe-online/") it is actually necessary
-                |  to stay safe online
-                
+        div.col-md-12.tableborder
+            span.col-md-5.lighter
+                p Install the adblocker for your platform:
+                span.reduced 
+                    a(href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm") Chrome
+                span.reduced
+                    a(href="https://addons.mozilla.org/en/firefox/addon/ublock-origin/") Firefox
+                span.reduced
+                    a(href="https://play.google.com/store/apps/details?id=org.adblockplus.browser") Android
+            span.col-md-1
+            span.col-md-6.lighter
+                p You might disable it, but often it is 
+                    a(href="https://www.technologyreview.com/s/601057/are-ad-blockers-needed-to-stay-safe-online/") actually necessary
+                    |  to stay safe online
+
+        div.col-md-12.tableborder
+            span.col-md-5.lighter
+                p Understand the risk 
+                    a(href='http://www.internetsociety.org/your-digital-footprint/what-is') few videos from Internet Society
+            span.col-md-1
+            span.col-md-6.lighter
+                p Because despite the promises, this ecosystem is designed to 
+                    a(href='https://www.propublica.org/article/facebook-lets-advertisers-exclude-users-by-race') identify you
+                    |  and don't 
+                    a(href="https://www.theatlantic.com/technology/archive/2017/02/browsing-history-identity/515763/") let you escape
+                    |.
+
+    h3 for Web Admin
+    .tableContainer
+        div.col-md-12.tableborder
+            span.col-md-5.lighter
+                p
+                    b HTTPS
+                    | has to be used, 
+                    a(href="https://letsencrypt.org/") it is free
+                    |, and all the third parties you include have to use the encrypted channel.
+            span.col-md-1
+            span.col-md-6.lighter
+                p Third party inclusions has been abused in 
+                    a(href="https://www.theguardian.com/world/2014/jan/27/nsa-gchq-smartphone-app-angry-birds-personal-data") passive 
+                    |  and 
+                    a(href="http://edition.cnn.com/2015/06/04/opinions/china-great-cannon/index.html") offensive ways by government, do not make any sense permit it if there is the option: show to your user you care!
+
+        div.col-md-12.tableborder
+            span.col-md-5.lighter
+                p
+                    b Reduce
+                    |  the usage, as much as possible
+            span.col-md-1
+            span.col-md-6.lighter
+                p Our project is intended to map and keep track of the website least concerned. If your business is based on advertising, it is OK, but the categories we pick offer other kinds of services
+        
+        div.col-md-12.tableborder
+            span.col-md-5.lighter
+                p
+                    b Avoid
+                    |  the most invasive web trackers.
+            span.col-md-1
+            span.col-md-6.lighter
+                p Cookies are the technology intended to do web tracking. If more invasive privacy harming techniques are uses, start from the rensponsible website to unintstall such trackers. This project next stages will go deeper in rank their invasiveness.
+
+
+    h3 for the Companies
+    .tableContainer
+        div.col-md-12.tableborder
+            span.col-md-5.lighter
+                p
+                    b Be Transparent
+            span.col-md-1
+            span.col-md-6.lighter
+                p do complete transparency report, fight against gag order, do internal awareness on data usage, disclose your minimization policy or we assume you have not. disclosure of the meta-data collected and the third parties you sell the data. The tracking business is surveillance.
+
+            span.col-md-5.lighter
+                p
+                    b Allow pseudonymous access
+            span.col-md-1
+            span.col-md-6.lighter
+                p Give your users the freedom to access your service pseudonymously. Real-name policies and their ilk are especially harmful to vulnerable populations, including pro-democracy activists and the LGBT community. For bonus points, don't restrict access to logged-in users.
+
+            span.col-md-5.lighter
+                p
+                    b Stop behavioral analysis
+            span.col-md-1
+            span.col-md-6.lighter
+                p Do not attempt to use your data to make decisions about user preferences and characteristics—like political preference or sexual orientation—that users did not explicitly specify themselves. Let users modify data that's been collected about them so far, and giving them the option to not have your service collect this information about them at all.
+
+
 include footer
