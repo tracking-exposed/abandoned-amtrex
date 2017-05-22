@@ -2,6 +2,7 @@ doctype html
 html
     head
         meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
         title American Muslims Tracking Exposed
 
         link(rel='stylesheet', href='/css/bootstrap.css')
@@ -20,14 +21,14 @@ html
         script(type='text/javascript', charset='utf8', src='/js/datatables.min.js')
 
         meta(property='og:title', content='american.muslims.tracking.exposed')
-        meta(property='og:image', content='https')
-        meta(property='og:url', content='website')
+        meta(property='og:image', content='https://facebook.tracking.exposed/images/fbtrex_logo-400x400.png')
+        meta(property='og:url', content='https://american.muslims.tracking.exposed')
         meta(property='og:type', content='website')
         meta(property='og:description', content='This project takes the cue from the recent Muslim ban. Since algorithms can express the behavior of internet users, it suggests that sensible data can be easily exploited just taking advantage of third party trackers already existing on the internet for lawful reasons. It targets website management, citizens who practice Islam, and tracking companies and aims to finalize a method to collaborate against such a danger, by assessing, as a first step, the presence of third-party tracking.')
 
     body(onload='initializeLanding("mosques", "American Muslims Tracking Exposed: ");loadPage("/landing");')
 
-        nav.navbar.navbar-default.navbar-fixed-top
+        nav.navbar.navbar-default.navbar-fixed-top.hidden-xs  
             .container
                 ul.nav.navbar-nav
                     li(class="landing")
