@@ -5,18 +5,22 @@ html
         meta(name="viewport" content="width=device-width, initial-scale=1")
         title American Muslims Tracking Exposed
 
-        script(type='text/javascript', src='/js/vendor/jquery.js')
+        link(rel='stylesheet', href='/css/index.css')
+        link(rel='stylesheet', href='/js/vendor/bootstrap/css/bootstrap.min.css')
+
+        script(type='text/javascript', src='/js/vendor/jquery/jquery.js')
+        script(type='text/javascript', src='/js/vendor/lodash.min.js')
+        script(type='text/javascript', src='/js/vendor/moment.min.js')
+
         script(type='text/javascript', src='/js/bootstrap.min.js')
         script(type='text/javascript', src='/js/lodash.min.js')
         script(type='text/javascript', src='/js/vendor/moment.min.js')
-
         script(type='text/javascript', src='/js/vendor/d3.min.js')
         script(type='text/javascript', src='/js/vendor/c3.min.js')
         script(type='text/javascript', src='/js/vendor/d3-sankey.min.js')
 
         script(type='text/javascript', src='/js/local/trex.js')
 
-        link(rel='stylesheet', href='/css/bootstrap.css')
         link(rel='stylesheet', href='/js/local/trex.css')
         link(rel='stylesheet', type='text/css', href='/css/c3.css')
 
@@ -28,23 +32,27 @@ html
 
     body(onload='initializeLanding("mosques", "American Muslims Tracking Exposed: ");loadPage("/landing");')
 
-        nav.navbar.navbar-default.navbar-fixed-top.hidden-xs  
-            .container
-                ul.nav.navbar-nav
-                    li(class="landing")
-                        a(onclick='loadPage("/landing");' class='links') Home
-                    li(class="what-to-do")
-                        a(onclick='loadPage("/what-to-do");' class='links') Know more
-                    li(class="about")
-                        a(onclick='loadPage("/about");' class='links') About
-                    li.dropdown
-                        a.dropdown-toggle(data-toggle='dropdown', href='#') Other initiatives
-                            span.caret
-                        ul.dropdown-menu
-                            li
-                                a(href='https://facebook.tracking.exposed' target='_blank') facebook.tracking.exposed
+        nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+            .container-fluid
+                a.navbar-brand(href='/') 
+                    span(class="glyphicon glyphicon-home")
+                button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        li.nav-item.active
+                            a.nav-link(href='/') Note: this website is currently in renewal,   -  
+                                span(class="glyphicon glyphicon-home") Welcome
+                                span.sr-only (current)
+                            li.nav-item
+                                a.nav-link(href='#knowmore') Know more
+                            li.nav-item
+                                a.nav-link(href='#about') About
 
         div#content
+
+        include landing
+        include what-to-do
+        include about
         include footer
-
-
